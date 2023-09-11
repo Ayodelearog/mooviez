@@ -16,6 +16,9 @@ module.exports = {
       },
       fontFamily: {
         'Josefin_Sans': ['Josefin_Sans'],
+      },
+      gridTemplateColumns: {
+        'fluid': 'repeat(auto-fit, minmax(15rem, 1fr))',
       }
     },
   },
