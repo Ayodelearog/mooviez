@@ -1,3 +1,5 @@
+const { Josefin_Sans } = require('next/font/google')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -12,6 +14,9 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        'Josefin_Sans': ['Josefin_Sans'],
+      }
     },
   },
   plugins: [],
