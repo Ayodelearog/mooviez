@@ -18,7 +18,7 @@ const Search = () => {
 
       
     return (
-        <div>
+        <div className=" w-full">
             <form onSubmit={searchMovies} className=" my-4 mb-8 flex items-center h-8">
                 <input 
                     type="search" 
