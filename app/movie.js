@@ -4,9 +4,11 @@ import Image from "next/image";
 const Movie = ({data}) => {
     const imagePath = "https://image.tmdb.org/t/p/original/";
 
+    
+
 
     return (
-        <div className=" my-4 border-2 border-gray-700 py-8 px-4">
+        <div className=" my-4 border-2 border-gray-700 py-8 px-4" key={data.id}>
             <h1 className=" text-green-400 text-2xl my-2">{data.title}</h1>
             <h2 className=" text-sm my-4">Release date: {data.release_date}</h2>
             <Link href={`/${data.id}`}>

@@ -5,8 +5,9 @@ const MovieDetails = async ({params}) => {
     const imagePath = `https://image.tmdb.org/t/p/original/`;
     const data = await fetch(`https://api.themoviedb.org/3/movie/${movie}?api_key=${process.env.API_KEY}&append_to_response=images`, {next: {revalidate: 240}});
     const res = await data.json()
-    console.log(res)
-    console.log(res.images.backdrops[0].file_path)
+    // console.log(res)
+    // console.log(res.images.backdrops[0].file_path)
+    
 
 
     return (
