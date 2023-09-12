@@ -18,19 +18,19 @@ const Search = () => {
 
       
     return (
-        <div className=" w- w-4/5 ">
-            <form onSubmit={searchMovies} className=" my-4 mb-8 flex items-center h-8">
+        <div className=" ">
+            <form onSubmit={searchMovies} className="  sm:w-full md:w-2/5 my-4 mb-8 flex items-center h-8">
                 <input 
                     type="search" 
                     name="searchMovies" 
                     value={searchQuery} 
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className=" bg-transparent border-2
-                     border-gray-700 mr-2 text-gray-300 outline-none px-1 h-full"
+                     border-gray-700 mr-2 text-gray-300 outline-none px-1 h-full w-8/12 "
                 />
                 <input type="submit" value="Find movie" className=" bg-green-600 h-full border-2 border-green-600 px-2 py-1 
-                 flex items-center hover:text-green-500 hover:bg-transparent hover:border-2
-                  hover:border-green-500 transition duration-500 ease-in-out cursor-pointer" />
+                 flex items-center justify-center hover:text-green-500 hover:bg-transparent hover:border-2
+                  hover:border-green-500 transition duration-500 ease-in-out cursor-pointer w-4/12 " />
             </form>
             {/* Display the movies here */}
             <div className=" grid gap-16 grid-cols-fluid">
